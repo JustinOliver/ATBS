@@ -1,0 +1,13 @@
+from time import time
+
+def calcProd():
+    product = 1
+    for i in range(1, 100000):
+        product = product * i
+    return product
+
+startTime = time()
+prod = calcProd()
+endTime = time()
+print('The result is long %s' % (len(str(prod))))
+print('Took %s seconds to calculate.' % (endTime-startTime))
